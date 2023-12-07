@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="404" href="404.html">
+    <link rel="stylesheet" href="style.css">
+    <title>ÉcoTeam</title>
+</head>
+<body>
+    <header>
+        <a href="Paris.html"><img src="JO1.png" alt="Olympics Logo"></a>
+        <a href="blue.html"><img id="JO" src="JO2.png" alt="Olympics Logo"></a>
+        <div class="logo">Bozos Team</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#maxence">Maxence PIERRE</a></li>
+                <li><a href="#jonathan">Jonathan LOTZ</a></li>
+                <li><a href="#theo">Théo LEFEBRE</a></li>
+                <li><a href="#remi">Rémi DUMESNIL</a></li>
+                <li><a href="#etienne">Etienne KRETZ</a></li>
+                <li><a href="#nathan">Nathan FLACHAT</a></li>
+            </ul>
+            <div class="burger-menu">&#9776; Menu</div>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <h2>Contenu</h2>
+        </div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const notFoundLinks = document.querySelectorAll('a[href="#notFound"]');
+            notFoundLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    window.location.href = '404.html';
+                });
+            });
+        });
+    </script>
+    <script src="app.js"></script>
+    <footer>
+        <p>{ EPITECH }</p>
+    </footer>
+</body>
+</html>

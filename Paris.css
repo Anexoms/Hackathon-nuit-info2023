@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("background-index.jpg");
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    opacity: 90%;
+}
+
+h2 {
+    color: white;
+}
+
+.fr-band {
+    background: linear-gradient(to right, #002395, #002395 33.33%, white 33.33%, white 66.66%, #ed2939 66.66%);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+img {
+    width: 10%;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+#JO {
+    margin-bottom: 35px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.burger-menu {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    opacity: 90%;
+}
+
+/* Media Query pour le menu burger sur les petits écrans */
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #4CAF50;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
