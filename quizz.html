@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizz.css">
+    <title>Quizz sur l'Écologie</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quizz sur l'Écologie</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Quelle est la principale source de pollution plastique dans les océans ?</p>
+                <label>
+                    <input type="radio" name="q1" value="a"> Les emballages alimentaires
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="b"> Les sacs plastiques
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="c"> Les bouteilles en plastique
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>2. Quel gaz est responsable du réchauffement climatique ?</p>
+                <label>
+                    <input type="radio" name="q2" value="a"> Dioxyde de carbone (CO2)
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="b"> Ozone (O3)
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="c"> Méthane (CH4)
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>3. Les produits biologiques ont un impact environnemental plus négatif que les produits conventionnels.</p>
+                <label>
+                    <input type="radio" name="q3" value="a"> Vrai
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="b"> Faux
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>4. Qu'est-ce que la mycorhize ?</p>
+                <label>
+                    <input type="radio" name="q4" value="a"> Un type de bactérie
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="b"> Une relation symbiotique entre les plantes et les champignons
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="c"> Un polluant atmosphérique
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>5. Quelle est la principale fonction des abeilles solitaires ?</p>
+                <label>
+                    <input type="radio" name="q5" value="a"> Production de miel
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="b"> Pollinisation des fleurs
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="c"> Construction de nids géants
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>6. Qu'est-ce que la migration des oiseaux nocturnes ?</p>
+                <label>
+                    <input type="radio" name="q6" value="a"> Un phénomène rare
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="b"> Le déplacement annuel de certains oiseaux durant la nuit
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="c"> Une maladie aviaire
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>7. Qu'est-ce que la permaculture ?</p>
+                <label>
+                    <input type="radio" name="q7" value="a"> Une méthode d'agriculture durable
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="b">  Une espèce de poisson
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="c"> Une technique de pêche
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>8. Quelle est la fonction principale des corridors biologiques ?</p>
+                <label>
+                    <input type="radio" name="q8" value="a"> Faciliter le trafic routier
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="b"> Permettre aux animaux de se déplacer entre des habitats fragmentés
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="c"> Fournir de l'ombre aux cultures
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>9. Qu'est-ce qu'une zone humide ?</p>
+                <label>
+                    <input type="radio" name="q9" value="a"> Une région très pluvieuse
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="b"> Un écosystème où l'eau est présente en permanence ou de manière saisonnière
+                <label>
+                    <input type="radio" name="q9" value="c"> Un désert
+                </label>
+            </div>
+            <br>
+            <div class="question">
+                <p>10. Qu'est-ce que la bioluminescence marine ?</p>
+                <label>
+                    <input type="radio" name="q10" value="a"> Un type de pollution lumineuse
+                </label>
+                <label>
+                    <input type="radio" name="q10" value="b"> La production de lumière par des organismes marins
+                </label>
+                <label>
+                    <input type="radio" name="q10" value="c"> Une méthode de pêche
+                </label>
+            </div>
+            <br>
+            <button type="button" onclick="submitQuiz()">Soumettre</button>
+        </form>
+
+        <div id="result"></div>
+        <div id="victoryGifContainer" style="display: none;">
+            <img id="victoryGif" src="GIF-Win.gif" alt="Victoire GIF">
+        </div>
+    </div>
+
+    <script src="quizz.js"></script>
+</body>
+</html>
