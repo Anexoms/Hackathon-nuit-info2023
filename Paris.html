@@ -26,10 +26,12 @@
         </nav>
         <div class="fr-band">fr</div>
     </header>
-
+    
     <main>
         <div>
             <h2>Contenu</h2>
+            <button id="playButton" class="bouton-rond">Play Music</button>
+            <audio id="audioPlayer" src="marseillaise.mp3"></audio>
         </div>
     </main>
     <footer>
@@ -45,6 +47,20 @@
                     window.location.href = '404.html';
                 });
             });
+        });
+    </script>
+    <script>
+        var audio = document.getElementById("audioPlayer");
+        var playButton = document.getElementById("playButton");
+
+        playButton.addEventListener("click", function () {
+            if (audio.paused) {
+                audio.play();
+                playButton.textContent = "Pause Music";
+            } else {
+                audio.pause();
+                playButton.textContent = "Play Music";
+            }
         });
     </script>
     <script src="app.js"></script>
