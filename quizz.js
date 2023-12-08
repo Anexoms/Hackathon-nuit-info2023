@@ -44,6 +44,12 @@ function submitQuiz() {
     if (score >= 8) {
         var victoryGifContainer = document.getElementById("victoryGifContainer");
         victoryGifContainer.style.display = "block";
+    } else if (score >= 5 && score < 8) {
+        var midGifContainer = document.getElementById("midGifContainer");
+        midGifContainer.style.display = "block";
+    } else if (score < 5) {
+        var loseGifContainer = document.getElementById("loseGifContainer");
+        loseGifContainer.style.display = "block";
     }
     // Vous pouvez ajouter d'autres actions après la soumission du quizz
 }
