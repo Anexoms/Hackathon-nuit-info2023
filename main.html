@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiens BOZO</title>
+    <style>
+        /* Styles pour le bouton rond */
+        .bouton-rond {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="playButton" class="bouton-rond">Play Music</button>
+
+    <audio id="audioPlayer" src="marseillaise.mp3"></audio>
+
+    <script>
+        var audio = document.getElementById("audioPlayer");
+        var playButton = document.getElementById("playButton");
+
+        playButton.addEventListener("click", function () {
+            if (audio.paused) {
+                audio.play();
+                playButton.textContent = "Pause Music";
+            } else {
+                audio.pause();
+                playButton.textContent = "Play Music";
+            }
+        });
+    </script>
+
+</body>
+</html>
