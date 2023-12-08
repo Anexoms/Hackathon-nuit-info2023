@@ -19,6 +19,17 @@ h2 {
     color: white;
 }
 
+.bouton-rond {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
 .fr-band {
     background: linear-gradient(to right, #002395, #002395 33.33%, white 33.33%, white 66.66%, #ed2939 66.66%);
 }
