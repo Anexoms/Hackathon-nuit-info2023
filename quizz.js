@@ -41,6 +41,9 @@ function submitQuiz() {
     }
 
     resultContainer.innerHTML = `Votre score : ${score} / ${Object.keys(answers).length}`;
-
+    if (score >= 8) {
+        var victoryGifContainer = document.getElementById("victoryGifContainer");
+        victoryGifContainer.style.display = "block";
+    }
     // Vous pouvez ajouter d'autres actions après la soumission du quizz
 }
