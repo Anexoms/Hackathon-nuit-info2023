@@ -20,6 +20,11 @@ h1 {
     color: #333;
 }
 
+#back-btn {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
 #victoryGif {
     margin-left: 50px;
 }

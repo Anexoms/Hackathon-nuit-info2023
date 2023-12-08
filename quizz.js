@@ -13,7 +13,6 @@ function submitQuiz() {
         q8: form.elements.q8.value,
         q9: form.elements.q9.value,
         q10: form.elements.q10.value
-        // Ajoutez d'autres questions et réponses au besoin
     };
 
     const correctAnswers = {
@@ -27,7 +26,6 @@ function submitQuiz() {
         q8: "b",
         q9: "b",
         q10: "b"
-        // Ajoutez les réponses correctes pour les autres questions
     };
 
     let score = 0;
@@ -51,5 +49,4 @@ function submitQuiz() {
         var loseGifContainer = document.getElementById("loseGifContainer");
         loseGifContainer.style.display = "block";
     }
-    // Vous pouvez ajouter d'autres actions après la soumission du quizz
 }
