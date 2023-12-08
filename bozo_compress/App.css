@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
+  font-size: calc(10px + 2vmin);
+}
+
+.App header {
+  display: flex;
+  position: absolute;
+  background-color: green;
+  top: 0;
+  width: 100%;
+  flex-direction: column;
+  color: white;
+}
+
+.App main {
+  margin: 200px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App footer {
+  background-color: green;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  color: white;
+}
+
+.App input[type ='file'] {
+  border-radius: 3px;
+  text-align: center;
+  font-size: 90%;
+}
+
+.App input[type ='number'] {
+  border-radius: 10px;
+  font-size: 90%;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.App input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.App img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.App button {
+  margin-top: 20px;
+  font-size: 70%;
+}

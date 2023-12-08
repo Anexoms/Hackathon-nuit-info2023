@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bozo Compressor</title>
+  <link rel="stylesheet" href="./App.css">
+</head>
+<body class="App">
+  <header class="title">
+    <h1>Bozo Compressorrr</h1>
+</header>
+<main>
+  <input type="file" accept="image/*" id="imageInput"></br>
+  <label for="targetSize">Target Size (KB): </label></br>
+  <input type="number" id="targetSize" min="1" value="100">
+  <button id="compressButton">Compress Image</button></br>
+  <img id="originalImage" alt="Original Image">
+  <a id="downloadLink" style="display: none">Download Compressed Image</a>
+  <script src="script.js"></script>
+</main>
+<footer>
+  <a>{ EPITECH }</a>
+</footer>
+</body>
+</html>
